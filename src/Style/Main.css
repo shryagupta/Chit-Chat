@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center; */
     background-color:#dadbd3 ;
+    background-color:teal;
     display: grid;
     place-items: center;
 }
@@ -18,3 +19,16 @@
     display: flex;
     
 }
+
+@media only screen and (max-width: 1100px){
+    .Card{
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .Card{
+        width: 95vw;
+    }
+  }
+  
