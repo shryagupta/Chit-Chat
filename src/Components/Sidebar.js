@@ -100,8 +100,11 @@ const Roomdis = ({element}) => {
     }
 
     function alterstring(messtring){
-        if(messtring.length>20)
-            return messtring.slice(0,20)+" ????";
+        if(messtring.length>10)
+            {
+                alert("Message length exceeded")
+                return messtring.slice(0,10)+" !!!!";
+            }
         else
             return messtring ;
     }
