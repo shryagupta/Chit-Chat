@@ -99,6 +99,13 @@ const Roomdis = ({element}) => {
             return messtring ;
     }
 
+    function alterstring(messtring){
+        if(messtring.length>20)
+            return messtring.slice(0,20)+" ????";
+        else
+            return messtring ;
+    }
+
     return (<>   
                          
                 <Link to={`/room/${element.id}`}>  
