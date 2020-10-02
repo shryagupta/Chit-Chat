@@ -47,6 +47,21 @@ function Sidebar(){
         toggleButton();
         
     }
+    const createpersonalroom =()=>{
+        console.log(rooms) ;
+        const name = prompt("Enter Room Name");
+        const  other = prompt("Enter Name of other person");
+
+        if(name){
+            db.collection("rooms").add({
+                name : name ,
+                timestamp : firebase.firestore.FieldValue.serverTimestamp()  ,
+                other : other
+            });
+        }
+        toggleButton();
+        
+    }
     
    
     return (
